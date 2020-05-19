@@ -1,14 +1,12 @@
 import React from "react";
 import "./App.css";
-import WeatherCard from './WeatherCard.js'
+import WeatherList from './WeatherList.js'
 
 function App({prop}) {
   return (
     <div className="App">
-     
-{prop.map((ele, i) =>(
-      <WeatherCard key={i} n={ele}/>
-      ))}
+     <h1>Weather</h1>
+    < WeatherList prop={ prop }/>
     </div>
   );
 }
